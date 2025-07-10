@@ -1,0 +1,306 @@
+body{
+  overflow-x: hidden;
+}
+.about{
+  font-size: 30PX;
+  margin: 40px;
+}
+
+.service{
+  font-size: 30px;
+  margin: 40px;
+}
+.project{
+  font-size: 30px;
+  margin: 50px;
+}
+.navbar-nav{
+  margin-left: 900px;
+  font-size: 20px;
+}
+.navbar-brand{
+  margin-left: 30px;
+  font-size: 30px;
+}
+h2{
+  font-size: 40px;
+  color:blue;
+  text-align: center;
+}
+img,p {
+  display: flex;
+}
+#ajay{
+  margin-top: -600px;
+  margin-left: 450px;
+}
+.about-container {
+  padding: 40px;
+  background: #f9f9f9;
+  overflow: hidden;
+  margin-top: -45px;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: -25px;
+}
+
+.about-image {
+  width: 400px;
+  height: 600px;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.about-text {
+  flex: 1;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.slide-in {
+  animation: slideIn 1s ease-out forwards;
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+@keyframes slideIn {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.skills-container {
+  padding: 40px;
+  background: linear-gradient(to right, #dbeafe, #f0f9ff);
+  min-height: 100vh;
+}
+
+.skills-heading {
+  text-align: center;
+  color: blue;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.skill-card {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #1e293b;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.skill-card:hover {
+  transform: scale(1.05);
+  background-color: blue;
+}
+
+.slide-in-card {
+  opacity: 0;
+  transform: translateX(100px);
+  animation: slideInCard 0.5s ease-out forwards;
+}
+
+@keyframes slideInCard {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.project-container {
+  padding: 40px;
+  background: linear-gradient(to right, #f8fafc, #e0f2fe);
+  min-height: 100vh;
+  font-family: sans-serif;
+}
+
+.project-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: blue;
+}
+
+.project-card {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.project-line {
+  font-size: 1.1rem;
+  color: #334155;
+  margin-bottom: 12px;
+  white-space: pre-wrap;
+}
+
+.slide-in-line {
+  opacity: 0;
+  transform: translateX(100px);
+  animation: slideInLine 0.6s ease-out forwards;
+}
+
+@keyframes slideInLine {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.service-container {
+  padding: 40px;
+  background: linear-gradient(to right, #f8fafc, #e0f2fe);
+  min-height: 100vh;
+  font-family: sans-serif;
+}
+
+.service-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: blue;
+  margin-bottom: 30px;
+}
+
+.service-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.service-line {
+  font-size: 1.2rem;
+  color: #334155;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+}
+
+/* Slide-in Nav */
+.slide-in-nav {
+  opacity: 0;
+  transform: translateX(100px);
+  animation: slideInNav 0.6s ease-out forwards;
+}
+
+@keyframes slideInNav {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ================= MEDIA QUERIES ================= */
+
+/* Mobile: Up to 600px */
+@media (max-width: 600px) {
+  .about, .service, .project {
+    font-size: 20px;
+    margin: 20px;
+  }
+
+  .navbar-nav {
+    margin-left: 0;
+    flex-direction: column;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .navbar-brand {
+    margin-left: 10px;
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .about-image {
+    width: 100%;
+    height: auto;
+  }
+
+  #ajay {
+    margin: 0;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card,
+  .service-content {
+    padding: 20px;
+  }
+}
+
+/* Tablet: 601px to 1024px */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .about, .service, .project {
+    font-size: 25px;
+    margin: 30px;
+  }
+
+  .navbar-nav {
+    margin-left: 100px;
+    font-size: 18px;
+  }
+
+  .navbar-brand {
+    margin-left: 20px;
+    font-size: 26px;
+  }
+
+  .about-image {
+    width: 300px;
+    height: auto;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .project-card,
+  .service-content {
+    padding: 25px;
+  }
+}
+
+/* Laptop/Desktop: 1025px and above (Default styles) */
+/* No changes needed – original styles apply */
